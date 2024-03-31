@@ -12,15 +12,25 @@ use Rappasoft\LaravelAuthenticationLog\Models\AuthenticationLog as Log;
 
 class AuthenticationLog extends DataTableComponent
 {
-    public string $defaultSortColumn = 'login_at';
+    public ?string $defaultSortColumn = 'login_at';
     public string $defaultSortDirection = 'desc';
-    public string $tableName = 'authentication-log';
+    public string $tableName = 'authentication-log-table';
 
     public User $user;
 
     public function mount(User $user)
     {
+        /*
+        if (! auth()->user() || ! auth()->user()->isAdmin()) {
+            $this->redirectRoute('frontend.index');
+        }
+        */
         $this->user = $user;
+    }
+
+    public function configure(): void
+    {
+        $this->setPrimaryKey('id');
     }
 
     public function columns(): array
@@ -34,7 +44,7 @@ class AuthenticationLog extends DataTableComponent
                     $agent = tap(new Agent, fn($agent) => $agent->setUserAgent($value));
                     return $agent->platform() . ' - ' . $agent->browser();
                 }),
-            Column::make(__('Location'))
+            Column::make(__('Location'), 'location')
                 ->searchable(function (Builder $query, $searchTerm) {
                     $query->orWhere('location->city', 'like', '%'.$searchTerm.'%')
                         ->orWhere('location->state', 'like', '%'.$searchTerm.'%')
@@ -57,7 +67,7 @@ class AuthenticationLog extends DataTableComponent
         ];
     }
 
-    public function query(): Builder
+    public function builder(): Builder
     {
         return Log::query()
             ->where('authenticatable_type', User::class)

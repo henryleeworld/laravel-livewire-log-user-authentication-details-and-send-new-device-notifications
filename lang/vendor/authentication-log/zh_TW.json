@@ -1,0 +1,15 @@
+{
+    "A failed login to your account": "登入您的帳號失敗",
+    "Account:": "帳號：",
+    "Browser:": "瀏覽器：",
+    "Hello!": "你好！",
+    "If this was you, you can ignore this alert. If you suspect any suspicious activity on your account, please change your password.": "如果是您，則可以忽略此警告。如果您懷疑您的帳戶有任何可疑活動，請更改您的密碼。",
+    "IP Address:": "IP 位址：",
+    "Location:": "地點：",
+    "Regards,": "致敬，",
+    "There has been a failed login attempt to your :app account.": "您的 :app 帳號嘗試登入失敗。",
+    "Time:": "時間：:",
+    "Unknown City": "未知城市",
+    "Unknown State": "未知狀態",
+    "Your :app account logged in from a new device.": "您的 :app 帳號從新設備登入。"
+}

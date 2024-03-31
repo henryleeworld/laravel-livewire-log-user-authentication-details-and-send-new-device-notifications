@@ -1,4 +1,4 @@
-# Laravel 8 Livewire 紀錄使用者認證細節並寄送新裝置通知
+# Laravel 10 Livewire 紀錄使用者認證細節並寄送新裝置通知
 
 引入 rappasoft 的 laravel-authentication-log 套件來擴增紀錄使用者認證細節並寄送新裝置通知，用於追蹤使用者認證訊息，例如登入/登出時間、IP、瀏覽器、位置等，並通過郵件、slack 或簡訊寄送新設備和登入失敗的通知。
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
@@ -31,5 +35,5 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/1Zudc1F.png)
+![](https://i.imgur.com/jocZfs0.png)
 > 紀錄使用者認證訊息
