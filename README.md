@@ -35,5 +35,5 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/jocZfs0.png)
+![](https://i.imgur.com/qXcN3Xm.png)
 > 紀錄使用者認證訊息

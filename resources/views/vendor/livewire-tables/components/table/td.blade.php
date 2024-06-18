@@ -1,14 +1,12 @@
-@aware(['component', 'row', 'rowIndex'])
+@aware(['component', 'row', 'rowIndex', 'tableName'])
 @props(['column', 'colIndex'])
 
 @php
-    $attributes = $attributes->merge(['wire:key' => 'cell-'.$rowIndex.'-'.$colIndex.'-'.$component->id]);
-    $theme = $component->getTheme();
     $customAttributes = $component->getTdAttributes($column, $row, $colIndex, $rowIndex)
 @endphp
 
-@if ($theme === 'tailwind')
-    <td
+@if ($component->isTailwind())
+    <td wire:key="{{ $tableName . '-table-td-'.$row->{$this->getPrimaryKey()}.'-'.$column->getSlug() }}"
         @if ($column->isClickable())
             onclick="window.open('{{ $component->getTableRowUrl($row) }}', '{{ $component->getTableRowUrlTarget($row) ?? '_self' }}')"
         @endif
@@ -23,8 +21,8 @@
     >
         {{ $slot }}
     </td>
-@elseif ($theme === 'bootstrap-4' || $theme === 'bootstrap-5')
-    <td
+@elseif ($component->isBootstrap())
+    <td wire:key="{{ $tableName . '-table-td-'.$row->{$this->getPrimaryKey()}.'-'.$column->getSlug() }}"
         @if ($column->isClickable())
             onclick="window.open('{{ $component->getTableRowUrl($row) }}', '{{ $component->getTableRowUrlTarget($row) ?? '_self' }}')"
             style="cursor:pointer"
