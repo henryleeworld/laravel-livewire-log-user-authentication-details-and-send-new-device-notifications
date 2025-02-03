@@ -13,19 +13,19 @@
         "laravel/jetstream": "^4.0",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "livewire/livewire": "^3.4",
+        "livewire/livewire": "^3.5",
         "rappasoft/laravel-authentication-log": "^3.0",
-        "rappasoft/laravel-livewire-tables": "3.0.0-beta.1",
+        "rappasoft/laravel-livewire-tables": "3.2.7",
         "torann/geoip": "^3.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23.1",
-        "laravel/pint": "^1.15",
+        "laravel/pint": "^1.16",
         "laravel/sail": "^1.29",
-        "mockery/mockery": "^1.6.11",
+        "mockery/mockery": "^1.6.12",
         "nunomaduro/collision": "^7.10",
         "phpunit/phpunit": "^10.5",
-        "spatie/laravel-ignition": "^2.5"
+        "spatie/laravel-ignition": "^2.7"
     },
     "autoload": {
         "psr-4": {
