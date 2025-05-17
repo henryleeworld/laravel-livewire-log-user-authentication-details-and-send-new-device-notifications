@@ -9,7 +9,7 @@
         "php": "^8.2",
         "itutu-media/laravel11-timezone": "^1.0",
         "jenssegers/agent": "^2.6",
-        "laravel/framework": "^11.31",
+        "laravel/framework": "^11.32",
         "laravel/tinker": "^2.10",
         "livewire/livewire": "^3.5",
         "rappasoft/laravel-authentication-log": "^4.0",
