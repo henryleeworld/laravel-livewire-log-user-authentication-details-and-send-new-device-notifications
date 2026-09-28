@@ -11,7 +11,7 @@
         "jenssegers/agent": "^2.6",
         "laravel/framework": "^11.33",
         "laravel/tinker": "^2.10",
-        "livewire/livewire": "^3.5",
+        "livewire/livewire": "^3.6",
         "rappasoft/laravel-authentication-log": "^4.0",
         "rappasoft/laravel-livewire-tables": "^3.6",
         "torann/geoip": "^3.0"
@@ -20,7 +20,7 @@
         "fakerphp/faker": "^1.23",
         "laravel/breeze": "^2.3",
         "laravel/pail": "^1.2",
-        "laravel/pint": "^1.21",
+        "laravel/pint": "^1.22",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.5",
