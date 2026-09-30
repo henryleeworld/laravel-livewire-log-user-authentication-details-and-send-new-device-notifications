@@ -7,24 +7,24 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "itutu-media/laravel11-timezone": "^1.0",
         "jenssegers/agent": "^2.6",
-        "laravel/framework": "^11.33",
-        "laravel/tinker": "^2.10",
-        "livewire/livewire": "^3.6",
-        "rappasoft/laravel-authentication-log": "^4.0",
-        "rappasoft/laravel-livewire-tables": "^3.6",
+        "laravel/framework": "^12.0",
+        "laravel/tinker": "^2.10.1",
+        "livewire/livewire": "^3.8",
+        "medicplus/laravel-timezone": "^1.0",
+        "rappasoft/laravel-authentication-log": "^6.1",
+        "rappasoft/laravel-livewire-tables": "^3.8",
         "torann/geoip": "^3.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
         "laravel/breeze": "^2.3",
-        "laravel/pail": "^1.2",
-        "laravel/pint": "^1.22",
+        "laravel/pail": "^1.2.2",
+        "laravel/pint": "^1.13",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.5",
-        "phpunit/phpunit": "^11.5"
+        "nunomaduro/collision": "^8.6",
+        "phpunit/phpunit": "^11.5.3"
     },
     "autoload": {
         "psr-4": {

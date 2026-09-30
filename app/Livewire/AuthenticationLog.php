@@ -4,11 +4,11 @@ namespace App\Livewire;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Builder;
-use JamesMills\LaravelTimezone\Facades\Timezone;
 use Jenssegers\Agent\Agent;
+use MedicPlus\LaravelTimezone\Facades\Timezone;
+use Rappasoft\LaravelAuthenticationLog\Models\AuthenticationLog as Log;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
-use Rappasoft\LaravelAuthenticationLog\Models\AuthenticationLog as Log;
 
 class AuthenticationLog extends DataTableComponent
 {
@@ -22,7 +22,7 @@ class AuthenticationLog extends DataTableComponent
     {
         /*
         if (! auth()->user() || ! auth()->user()->isAdmin()) {
-            $this->redirectRoute('frontend.index');
+            $this->redirectRoute('dashboard');
         }
         */
         $this->user = $user;

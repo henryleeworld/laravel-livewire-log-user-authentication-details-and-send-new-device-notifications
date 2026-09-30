@@ -25,9 +25,9 @@
             @endif
         @elseif ($type === 'yes-no')
             @if ($successValue === true)
-                <span>Yes</span>
+                <span>{{ __('Yes') }}</span>
             @else
-                <span>No</span>
+                <span>{{ __('No') }}</span>
             @endif
         @endif
     @else
@@ -51,9 +51,9 @@
             @endif
         @elseif ($type === 'yes-no')
             @if ($successValue === false)
-                <span>Yes</span>
+                <span>{{ __('Yes') }}</span>
             @else
-                <span>No</span>
+                <span>{{ __('No') }}</span>
             @endif
         @endif
     @endif
